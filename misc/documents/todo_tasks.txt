@@ -1,0 +1,55 @@
+=========
+REMEMBER!
+=========
+Each time you change the logic / update NPM package version, do the following steps:
+1. Perform a backup before any change has been made, by running in the terminal 'npm run backup' or manually to the backups directory.
+2. After the change, check that everything works OK.
+3. Keep the maintenance - Every change you do - Make sure to update in this document if needed.
+4. Do commit + push on Git project repository.
+5. Keep the backup update - Every change you do - Update in iOmega (each couple of days do backup there).
+=================================
+
+ToDo tasks:
+===========
+-Copy all the logic from the 'sender' project.
+-Clean the uneeded logic and files.
+-Take the 'air-bnb' eslint style from the 'auth-microservice' project.
+-Find a apropriate template.
+-Add credentials for 'settings.js' file.
+-Create and activate the 'CV-thanks' project earlier discussed:
+1. Send thanks emails to all places that I was interviewed/rejected/supposed to be interviewed.
+2. About that, maybe a small node project to send these emails automaticlly via SendGrid, like the 'sender' project - Think about that).
+-Test this on a dummy email.
+-All sent email addresses will be kept in a TXT file.
+-Limit to 20 in a day (find a way to do it within a TXT file).
+-Make sure 'id' => 'Id', 'url' => 'URL', 'api' => 'API'.
+-Make sure spaces in all files between bottom, need to fix cases like this:
+}
+module.exports
+}
+export default
+-Change all '.length > 0' to 'isExists'.
+-Change all (where it's possible) from 'console.log' to 'logUtils.log'.
+-Remove duplicate import/require (convert to index.js if possible).
+-Sort alphabetically all the imports/requires by https://alphabetizer.flap.tv/.
+-Sort alphabetically all the imports/requires: external packages, settings, (containers, components, store, assert) data, models, enums, services, utils.
+-File extensions should be upper case: JSON, TXT, etc.
+-Remove the space lines inside methods and functions.
+-Remove the duplicate empty lines: \n\s*\n\s*\n
+-Remove the first empty line: ^(?<![\s])\n
+-Remove the last empty line: \n\s*$(?!\n)
+-Detect all comments without a dot at the end: ^// .*(?<!\.)$
+-Make sure all switch-case have curly braces.
+-Clear unused enums and make sure all in used really exists.
+-Search for 'async ' and create a list of functions/methods, and make sure that all calls have await.
+-Scan all files for spell mistakes with the 'files-spell-checker' project.
+-Do all the 'ToDo' tasks.
+-Format all documents.
+-Verify all works well.
+-Fix TXT files spell mistakes via Gmail (Also, convert '_' to ' ' in all places when checking).
+-Move all complete tasks from here to complete_tasks.txt.
+-Upload to GitHub.
+-Backup to iOmega.
+
+Complete / canceled tasks:
+==========================
